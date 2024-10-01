@@ -44,7 +44,11 @@ function App() {
     <div>
       <Descriptions />
 
-      <Options updateFeedback={updateFeedback} resetFeedBack={resetFeedBack} />
+      <Options
+        updateFeedback={updateFeedback}
+        resetFeedBack={resetFeedBack}
+        totalFeedBack={totalFeedBack}
+      />
 
       {totalFeedBack ? (
         <FeedBack
